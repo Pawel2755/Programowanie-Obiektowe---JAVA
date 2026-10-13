@@ -1,0 +1,47 @@
+Klasa: Książka
+
+Stan:
+- tytuł
+- autor
+- ISBN
+- rok wydania
+
+Odpowiedzialność:
+- przechowywanie informacji na temat książki
+- udostępnia dane identyfikacyjne książki
+
+Klasa: Czytelnik
+
+Stan:
+- imię
+- nazwisko
+- numer karty bibliotecznej
+
+Odpowiedzialność:
+- przechowywanie danych osobowych
+
+Klasa: Wypożyczenie
+
+Stan:
+- referencja do wypożyczonej książki
+- referencja do czytelnika
+- data wypożyczenia
+- termin zwrotu
+
+Odpowiedzialność:
+- łączenie książki z czytelnikiem
+
+Klasa: Biblioteka
+
+Stan:
+- zbiór książek
+- zbiór czytelników
+- rejestr wypożyczeni
+
+Odpowiedzialność:
+- zarządzanie bazą danych użytkowników
+
+Zależności:
+Obiekt Biblioteka gromadzi wiele obiektów klas
+Obiekt klasy Wypożyczenie łączy obiekt Książka i Czytelnik
+Czytelnik może być powiązany z wieloma obiektami
