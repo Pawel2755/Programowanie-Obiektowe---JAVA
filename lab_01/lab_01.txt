@@ -1,3 +1,16 @@
+//ZADANIE 5
+
+i	x	wynik
+0	2	  2
+1	4	  6
+2	8	 14
+3	16	 30	
+
+
+
+
+//ZADANIE 6
+
 Klasa: Książka
 
 Stan:
@@ -45,3 +58,80 @@ Zależności:
 Obiekt Biblioteka gromadzi wiele obiektów klas
 Obiekt klasy Wypożyczenie łączy obiekt Książka i Czytelnik
 Czytelnik może być powiązany z wieloma obiektami
+
+//ZADANIE 7
+
+KINO
+
+1.SEANS
+-przypisany film
+-przypisana sala
+-data i godzina rozpoczęcia
+
+Odpowiedzialności:
+-zarządzanie miejscami w sali
+-pokazywanie ilości dostępnych miejsc
+
+2.BILET
+-przypisany seans
+-numer rzędu i miejsce
+-typ biletu
+
+Odpowiedzialności:
+-udzielanie dostępu na sale 
+
+3.FILM
+-tytuł
+-czas trwania
+-gatunek
+
+Odpowiedzialności:
+-przechowywanie danych o filmie
+
+4.SALA KINOWA
+-numer sali
+-liczba miejsc
+
+Odpowiedzialności:
+-przechowywanie informacji o układzie miejsc
+
+Odpowiedzi:
+1.
+Obiekt seans musi wiedzieć o istnieniu filmu oraz sali kinowej
+Obiekt bilet musi powiązać konkretne miejsce z seansem
+Klasa film nie musi wiedzieć, w których salach ani na których seansach jest wyświetlana
+2.
+Sprawdzanie dostępności miejsc w sali przypisano do seansu, a nie do sali kinowej, ponieważ ta sama sala w różnych godzinach ma zupełnie inny stan zajętości miejsc.
+3.
+Pomijam temperaturę w sali, natężenie światła i szczegóły techniczne projektora
+4.
+System ma służyć do repertuaru, rezerwacji i sprzedaży biletów
+
+//ZADANIE 8
+
+A.
+-numerRejestracyjny
+-marka
+-model
+-stawkaZaDobe
+-stanLicznika
+B.
+-poziomUszkodzen
+-mocSilnika
+-aktualnaPredkosc
+C.
+-numerVIN
+-dataOstatniegoPrzegladu
+-historiaSerwisowa
+
+Odpowiedź:
+Nie istnieje jedna uniwersalna klasa Samochod, ponieważ nie wszystkie rzeczy są potrzebne w danym projekcie. 
+
+
+
+
+
+
+
+
+
